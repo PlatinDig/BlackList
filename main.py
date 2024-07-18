@@ -14,3 +14,6 @@ app.config['SECRET_KEY'] = 'PleaseChageMe'
 @app.route('/home', methods=['POST', 'GET'])
 def main():
     return render_template('index.html')
+
+if __name__ == "__main__":
+    app.run(debug=True, host='0.0.0.0', port=8000)
